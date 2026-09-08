@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo dos Gatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="container menu">
+            <h1>Mundo dos Gatos</h1>
+
+            <nav>
+                <a href="#racas">Raças</a>
+                <a href="#curiosidades">Curiosidades</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="destaque">
+            <div class="container destaque-conteudo">
+                <div>
+                    <span class="tag">Blog sobre gatos</span>
+                    <h2>Conheça algumas raças de gatinhos</h2>
+                    <p>
+                        Cada gato tem sua própria personalidade, mas algumas raças
+                        carregam traços bem marcantes. Separei aqui algumas das mais
+                        conhecidas para você conhecer melhor.
+                    </p>
+
+                    <a class="botao-link" href="#racas">Ver raças</a>
+                </div>
+
+                <div class="gato-destaque">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/A-Cat.jpg?width=500" alt="Gato olhando para a câmera">
+                </div>
+            </div>
+        </section>
+
+        <article class="container conteudo">
+            <section id="racas">
+                <div class="titulo-secao">
+                    <p>ALGUMAS RAÇAS</p>
+                    <h2>Gatos que chamam atenção</h2>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <div class="icone">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Maine_Coon_cat.jpg?width=300" alt="Gato Maine Coon">
+                        </div>
+                        <h3>Maine Coon</h3>
+                        <p>
+                            Uma raça conhecida pelo tamanho grande, pelos longos pelos e
+                            pelo comportamento geralmente amigável.
+                        </p>
+                        <span>Grande e sociável</span>
+                    </div>
+
+                    <div class="card">
+                        <div class="icone">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Siamese_Cat_Face.jpg?width=300" alt="Gato Siamês">
+                        </div>
+                        <h3>Siamês</h3>
+                        <p>
+                            O Siamês costuma ser bastante comunicativo, ativo e próximo
+                            dos seus tutores.
+                        </p>
+                        <span>Ativo e comunicativo</span>
+                    </div>
+
+                    <div class="card">
+                        <div class="icone">
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Persian_Cat.jpg?width=300" alt="Gato da raça Persa">
+                        </div>
+                        <h3>Persa</h3>
+                        <p>
+                            Possui pelagem longa e aparência muito característica.
+                            Normalmente é associado a um comportamento mais tranquilo.
+                        </p>
+                        <span>Calmo e elegante</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="curiosidades" class="curiosidades">
+                <div>
+                    <p class="subtitulo">CURIOSIDADES</p>
+                    <h2>Mais do que apenas aparência</h2>
+                    <p>
+                        A raça pode influenciar algumas características físicas e
+                        comportamentais, mas cada animal é único. O ambiente, os cuidados
+                        e a convivência também influenciam bastante no comportamento.
+                    </p>
+
+                    <ul>
+                        <li>Gatos podem dormir várias horas por dia.</li>
+                        <li>O ronronar pode acontecer em diferentes situações.</li>
+                        <li>Os bigodes ajudam na percepção do ambiente.</li>
+                    </ul>
+                </div>
+
+                <aside>
+                    <h3>Dica</h3>
+                    <p>
+                        Antes de escolher um gato apenas pela aparência, é importante
+                        conhecer suas necessidades e ter certeza de que poderá oferecer
+                        os cuidados adequados.
+                    </p>
+                </aside>
+            </section>
+
+            <section class="midia">
+                <div class="titulo-secao">
+                    <p>VÍDEO</p>
+                    <h2>Um pouco mais sobre gatos</h2>
+                </div>
+
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/ByH9LuSILxU"
+                        title="Vídeo sobre gatos"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <section id="contato" class="contato">
+                <div class="form-texto">
+                    <p class="subtitulo">PARTICIPE</p>
+                    <h2>Qual é sua raça favorita?</h2>
+                    <p>
+                        Preencha o formulário e conte qual gato você mais gosta.
+                    </p>
+                </div>
+
+                <form>
+                    <div class="linha-form">
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="raca">Raça favorita</label>
+                        <select id="raca" name="raca" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="maine-coon">Maine Coon</option>
+                            <option value="siames">Siamês</option>
+                            <option value="persa">Persa</option>
+                            <option value="outra">Outra</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="idade">Sua idade</label>
+                        <input type="number" id="idade" name="idade" min="10" max="100">
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Comentário</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva seu comentário"></textarea>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox" id="novidades" name="novidades">
+                        <label for="novidades">Quero receber novidades sobre gatos</label>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>2026 - Mundo dos Gatos</p>
+        </div>
+    </footer>
+</body>
+</html>
